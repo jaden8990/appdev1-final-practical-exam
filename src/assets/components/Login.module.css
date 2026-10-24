@@ -1,0 +1,230 @@
+
+/* Main page layout */
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Left section */
+.leftSection {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Heading */
+.title {
+  width: 100%;
+  margin: 0;
+  color: #111111;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.formGroup input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.formGroup input::placeholder {
+  color: #999999;
+}
+
+.formGroup input:focus {
+  outline: 2px solid #b77b9a;
+  outline-offset: 1px;
+}
+
+/* Terms checkbox */
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.terms input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #222222;
+}
+
+/* Signup button */
+.signupButton {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #155003;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  background-color: #103d02;
+}
+
+/* Or divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+  margin: 24px 0;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.divider p {
+  margin: 0;
+  color: #777777;
+  font-size: 13px;
+}
+
+/* Google and Apple buttons */
+.socialButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.socialButton {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 8px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #222222;
+  font-family: inherit;
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.socialButton img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.socialButton:hover {
+  background-color: #f7f7f7;
+}
+
+/* Sign in text */
+.loginText {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 24px;
+  text-align: center;
+  color: #555555;
+  font-size: 13px;
+}
+
+.loginText a {
+  color: #222222;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Right section with blossom image */
+.rightSection {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.blossomImage {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .leftSection {
+    padding: 32px 24px;
+  }
+
+  .rightSection {
+    padding: 24px;
+  }
+
+  .blossomImage {
+    max-width: 320px;
+  }
+}
