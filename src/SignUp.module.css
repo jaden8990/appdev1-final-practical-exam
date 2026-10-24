@@ -1,18 +1,33 @@
+
 .page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
 }
 
 .leftSection {
   min-width: 0;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title {
+  margin: 0 0 32px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111111;
 }
 
 .rightSection {
+  min-width: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 32px;
 }
 
